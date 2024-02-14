@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="icon" href="images/images.jpg" />
+    <title>عبدالله العبدالله</title>
+    <script src="table2excel.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>عبدالله العبدالله</h1>
+    </header>
+    <table>
+      <thead>
+        <tr>
+          <td>الطالب</td>
+          <td>المستوى</td>
+          <td>أستاذه العربي</td>
+          <td>الأوقات</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>طارق رباح</td>
+          <td>مبتدأ</td>
+          <td>أ. حامد الحلاق</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>عثمان حومد</td>
+          <td>مبتدأ</td>
+          <td>أ. حامد الحلاق</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>رياض مراد</td>
+          <td>متوسط</td>
+          <td>أ. محمد كور حسن</td>
+          <td>أيام الجمعة, السبت من 21:00 الى 22:00</td>
+        </tr>
+        <tr>
+          <td>سعد الله صابوني</td>
+          <td>متوسط</td>
+          <td>أ. عبدالله الحمصي</td>
+          <td>أيام الخميس, والسبت من 19:00 الى 20:00</td>
+        </tr>
+        <tr>
+          <td>تيم سلمان</td>
+          <td>متوسط</td>
+          <td>أ. علي الناصر</td>
+          <td>أيام الأربعاء, والجمعة من 20:00 الى 21:00</td>
+        </tr>
+        <tr>
+          <td>بدر الدين بارود</td>
+          <td>متقدم</td>
+          <td>أ. عبدالوهاب المقري</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>معاذ الرفاعي</td>
+          <td>متقدم</td>
+          <td>أ. عبدالوهاب المقري</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>مصطفى الحلاق</td>
+          <td>متقدم</td>
+          <td>أ. عبدالوهاب المقري</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>المثنى ابو الهيجاء</td>
+          <td>متقدم</td>
+          <td>أ. عبدالوهاب المقري</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>عمرو كريم</td>
+          <td>متقدم</td>
+          <td>أ. عبدالوهاب المقري</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>مؤيد بونجة</td>
+          <td>متقدم</td>
+          <td>أ. عبدالوهاب المقري</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>حذيفة نقاشة</td>
+          <td>متقدم</td>
+          <td>أ. عبدالوهاب المقري</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>عبد الرحمن قطان</td>
+          <td>متقدم</td>
+          <td>أ. مصطفى الأنقر</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>حمزة السيد حسن</td>
+          <td>متقدم</td>
+          <td>أ. مصطفى الأنقر</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>عمر قديمي</td>
+          <td>متقدم</td>
+          <td>أ. مصطفى الأنقر</td>
+          <td>حضور</td>
+        </tr>
+      </tbody>
+    </table>
+    <button id="download_pdf" class="download">Click To Download</button>
+    <script>
+      document
+        .getElementById("download_pdf")
+        .addEventListener("click", function () {
+          var table2excel = new Table2Excel();
+          table2excel.export(document.querySelectorAll("table"));
+        });
+      document
+        .getElementById("download_pdf1")
+        .addEventListener("click", function () {
+          var table2excel = new Table2Excel();
+          table2excel.export(document.querySelectorAll(".table1"));
+        });
+    </script>
+  </body>
+</html>

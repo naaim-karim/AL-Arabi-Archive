@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="icon" href="images/images.jpg" />
+    <title>محمد أنس الحلبي</title>
+    <script src="table2excel.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>محمد أنس الحلبي</h1>
+    </header>
+    <table>
+      <thead>
+        <tr>
+          <td>الطالب</td>
+          <td>المستوى</td>
+          <td>أستاذه العربي</td>
+          <td>الأوقات</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>مؤيد كشورة</td>
+          <td>مبتدأ</td>
+          <td>أ. عزالدين العاني</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>عبدالله الطالب</td>
+          <td>مبتدأ</td>
+          <td>أ. عزالدين العاني</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>محمد لؤي صالحاني</td>
+          <td>مبتدأ</td>
+          <td>أ. أحمد قديمي</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>هاشم مريري</td>
+          <td>متوسط</td>
+          <td>عبدالمنعم كريم</td>
+          <td>أيام الثلاثاء, الخميس من 18:00 الى 19:00</td>
+        </tr>
+        <tr>
+          <td>محمد بسام شموط</td>
+          <td>متوسط</td>
+          <td>أ. عبدالله الحمصي</td>
+          <td>أيام الخميس, والسبت من 19:00 الى 20:00</td>
+        </tr>
+        <tr>
+          <td>عمرو نشواتي</td>
+          <td>متوسط</td>
+          <td>أ. عبدالله العاني</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>كنان الكردي</td>
+          <td>متوسط</td>
+          <td>أ. عبدالله العاني</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>أحمد العقاد</td>
+          <td>متوسط</td>
+          <td>أ. علي الناصر</td>
+          <td>أيام الأربعاء, والجمعة من 20:00 الى 21:00</td>
+        </tr>
+        <tr>
+          <td>مجاهد سمّيع</td>
+          <td>متوسط</td>
+          <td>أ. محمد كور حسن</td>
+          <td>أيام الجمعة, السبت من 21:00 الى 22:00</td>
+        </tr>
+        <tr>
+          <td>سامي خميس</td>
+          <td>متقدم</td>
+          <td>أ. مصطفى الأنقر</td>
+          <td>حضور</td>
+        </tr>
+      </tbody>
+    </table>
+    <button id="download_pdf" class="download">Click To Download</button>
+    <script>
+      document
+        .getElementById("download_pdf")
+        .addEventListener("click", function () {
+          var table2excel = new Table2Excel();
+          table2excel.export(document.querySelectorAll("table"));
+        });
+      document
+        .getElementById("download_pdf1")
+        .addEventListener("click", function () {
+          var table2excel = new Table2Excel();
+          table2excel.export(document.querySelectorAll(".table1"));
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="icon" href="images/images.jpg" />
+    <title>عبدالله الحمصي</title>
+    <script src="table2excel.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>عبدالله الحمصي</h1>
+    </header>
+    <table>
+      <thead>
+        <tr>
+          <td>الطالب</td>
+          <td>المستوى</td>
+          <td>أستاذه العربي</td>
+          <td>الأوقات</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>عبيدة الطبال</td>
+          <td>مبتدأ</td>
+          <td>أ. حامد الحلاق</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>ميسرة الطبال</td>
+          <td>مبتدأ</td>
+          <td>أ. حامد الحلاق</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>محمد اسكافي</td>
+          <td>مبتدأ</td>
+          <td>أ. حامد الحلاق</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>يزن عطايا</td>
+          <td>مبتدأ</td>
+          <td>أ. حامد الحلاق</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>حسام النجار</td>
+          <td>متوسط</td>
+          <td>أ. محمد كور حسن</td>
+          <td>أيام الجمعة, السبت من 21:00 الى 22:00</td>
+        </tr>
+        <tr>
+          <td>زياد كحالة</td>
+          <td>متوسط</td>
+          <td>أ. عبدالله الحمصي</td>
+          <td>أيام الخميس, والسبت من 19:00 الى 20:00</td>
+        </tr>
+        <tr>
+          <td>مؤمن شالاتي</td>
+          <td>متوسط</td>
+          <td>أ. عبدالله الحمصي</td>
+          <td>أيام الخميس, والسبت من 19:00 الى 20:00</td>
+        </tr>
+        <tr>
+          <td>سامي الحاج علي</td>
+          <td>متقدم</td>
+          <td>أ.مصطفى الأنقر</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>لؤي المصري</td>
+          <td>متقدم</td>
+          <td>أ.مصطفى الأنقر</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>عبدالرحمن قلب اللوز</td>
+          <td>متقدم</td>
+          <td>أ.مصطفى الأنقر</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>يحيى نشواتي</td>
+          <td>متقدم</td>
+          <td>أ. عبدالوهاب المقري</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>محمد قطان</td>
+          <td>متقدم</td>
+          <td>أ. عبدالوهاب المقري</td>
+          <td>حضور</td>
+        </tr>
+      </tbody>
+    </table>
+    <button id="download_pdf" class="download">Click To Download</button>
+    <script>
+      document
+        .getElementById("download_pdf")
+        .addEventListener("click", function () {
+          var table2excel = new Table2Excel();
+          table2excel.export(document.querySelectorAll("table"));
+        });
+      document
+        .getElementById("download_pdf1")
+        .addEventListener("click", function () {
+          var table2excel = new Table2Excel();
+          table2excel.export(document.querySelectorAll(".table1"));
+        });
+    </script>
+  </body>
+</html>

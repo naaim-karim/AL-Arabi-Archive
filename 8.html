@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="icon" href="images/images.jpg" />
+    <title>حمزة الحلاق</title>
+    <script src="table2excel.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>حمزة الحلاق</h1>
+    </header>
+    <table>
+      <thead>
+        <tr>
+          <td>الطالب</td>
+          <td>المستوى</td>
+          <td>أستاذه العربي</td>
+          <td>الأوقات</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ايهم شاهين</td>
+          <td>مبتدأ</td>
+          <td>أ. أحمد قديمي</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>عمر المرعي</td>
+          <td>مبتدأ</td>
+          <td>أ. أحمد قديمي</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>آردم الكردي</td>
+          <td>مبتدأ</td>
+          <td>أ. أحمد قديمي</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>تیم شمندور</td>
+          <td>مبتدأ</td>
+          <td>أ. أحمد قديمي</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>يوسف منقار</td>
+          <td>مبتدأ</td>
+          <td>أ. أحمد قديمي</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>عمر الحاج علي</td>
+          <td>متوسط</td>
+          <td>أ. سارية الخباز</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>محمد سعيد البدوي</td>
+          <td>متوسط</td>
+          <td>أ. عبدالله العاني</td>
+          <td>حضور</td>
+        </tr>
+        <tr>
+          <td>ادم كحالة</td>
+          <td>متوسط</td>
+          <td>أ. علي الناصر</td>
+          <td>أيام الأربعاء, والجمعة من 20:00 الى 21:00</td>
+        </tr>
+      </tbody>
+    </table>
+    <button id="download_pdf" class="download">Click To Download</button>
+    <script>
+      document
+        .getElementById("download_pdf")
+        .addEventListener("click", function () {
+          var table2excel = new Table2Excel();
+          table2excel.export(document.querySelectorAll("table"));
+        });
+      document
+        .getElementById("download_pdf1")
+        .addEventListener("click", function () {
+          var table2excel = new Table2Excel();
+          table2excel.export(document.querySelectorAll(".table1"));
+        });
+    </script>
+  </body>
+</html>
