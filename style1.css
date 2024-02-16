@@ -65,3 +65,19 @@ button.download {
   padding: 10px;
   cursor: pointer;
 }
+
+button.attendance {
+  background-color: #034a66;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: #fff;
+  margin: 10px;
+  position: absolute;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
