@@ -11,6 +11,8 @@
   <body>
     <header>
       <h1>محمد الحمصي</h1>
+      <span>آخر تحديث بتاريخ:</span>
+      <div id="placeholder"></div>
     </header>
     <table>
       <thead>
@@ -122,14 +124,16 @@
           <td>مجد قصاب باشي</td>
           <td>لم يختبر</td>
           <td></td>
-          <td></td> 
+          <td></td>
         </tr>
       </tbody>
     </table>
-    <div>
+    <div class="buttons">
       <a href="Attendance/9.html"><button class="attendance">التفقد</button></a>
       <button id="download_pdf" class="download">اضغط للتنزيل</button>
-      <a href="Homeworks/homework9.html"><button class="homeworks">الواجبات</button></a>
+      <a href="Homeworks/homework9.html"
+        ><button class="homeworks">الواجبات</button></a
+      >
     </div>
     <script>
       document
@@ -144,6 +148,11 @@
           var table2excel = new Table2Excel();
           table2excel.export(document.querySelectorAll(".table1"));
         });
+    </script>
+    <script>
+      document.getElementById("placeholder").innerHTML = new Date(
+        document.lastModified
+      );
     </script>
   </body>
 </html>

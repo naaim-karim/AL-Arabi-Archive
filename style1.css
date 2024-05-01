@@ -66,11 +66,15 @@ button.homeworks {
   cursor: pointer;
 }
 
-div {
+div.buttons {
   display: flex;
   justify-content: space-between;
   /* text-align: center; */
   /* position: relative; */
   /* right: 50%; */
   /* transform: translate(50%, 0); */
+}
+
+div#placeholder {
+  margin-bottom: 10px;
 }
