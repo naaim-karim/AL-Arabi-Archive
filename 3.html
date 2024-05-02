@@ -11,7 +11,7 @@
   <body>
     <header>
       <h1>حمزة الرفاعي</h1>
-      <span>آخر تحديث بتاريخ:</span>
+      <span>آخر تحديث للمعلومات بتاريخ:</span>
       <div id="placeholder"></div>
     </header>
     <table>
@@ -106,6 +106,11 @@
           var table2excel = new Table2Excel();
           table2excel.export(document.querySelectorAll(".table1"));
         });
+    </script>
+    <script>
+      document.getElementById("placeholder").innerHTML = new Date(
+        document.lastModified
+      );
     </script>
     <script>
       document.getElementById("placeholder").innerHTML = new Date(

@@ -9,10 +9,14 @@
   <body>
     <header>
       <h1>حمزة الحلاق</h1>
+      <span>آخر تحديث للمعلومات بتاريخ:</span>
+      <div id="placeholder" style="margin-bottom: 10px"></div>
     </header>
-    <img
-      src="images/حمزة الحلاق/Screenshot 2024-05-01 132146.png"
-      alt=""
-    />
+    <img src="images/حمزة الحلاق/Screenshot 2024-05-01 132146.png" alt="" />
+    <script>
+      document.getElementById("placeholder").innerHTML = new Date(
+        document.lastModified
+      );
+    </script>
   </body>
 </html>

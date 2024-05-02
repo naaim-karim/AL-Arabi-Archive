@@ -9,10 +9,14 @@
   <body>
     <header>
       <h1>أحمد قديمي</h1>
+      <span>آخر تحديث للمعلومات بتاريخ:</span>
+      <div id="placeholder" style="margin-bottom: 10px"></div>
     </header>
-    <img
-      src="images/أحمد قديمي/Screenshot 2024-05-01 132016.png"
-      alt=""
-    />
+    <img src="images/أحمد قديمي/Screenshot 2024-05-01 132016.png" alt="" />
+    <script>
+      document.getElementById("placeholder").innerHTML = new Date(
+        document.lastModified
+      );
+    </script>
   </body>
 </html>
