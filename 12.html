@@ -115,9 +115,9 @@
         ><button class="attendance">التفقد</button></a
       >
       <button id="download_pdf" class="download">اضغط للتنزيل</button>
-      <a href="Homeworks/homework12.html"
+      <!-- <a href="Homeworks/homework12.html"
         ><button class="homeworks">الواجبات</button></a
-      >
+      > -->
     </div>
     <script>
       document
@@ -126,17 +126,6 @@
           var table2excel = new Table2Excel();
           table2excel.export(document.querySelectorAll("table"));
         });
-      document
-        .getElementById("download_pdf1")
-        .addEventListener("click", function () {
-          var table2excel = new Table2Excel();
-          table2excel.export(document.querySelectorAll(".table1"));
-        });
-    </script>
-    <script>
-      document.getElementById("placeholder").innerHTML = new Date(
-        document.lastModified
-      );
     </script>
     <script>
       document.getElementById("placeholder").innerHTML = new Date(
