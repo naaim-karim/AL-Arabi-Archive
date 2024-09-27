@@ -35,7 +35,7 @@ ul li {
   padding: 5px;
 }
 
-.name:hover ~ ul{
+.name:hover + ul{
   display: block;
 }
 
