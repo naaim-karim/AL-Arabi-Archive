@@ -1,6 +1,7 @@
 header {
   position: relative;
 }
+
 header:not(:first-child) {
   margin-top: 50px;
 }
@@ -12,10 +13,13 @@ header h1 {
 
 article {
   text-align: center;
+  overflow: hidden;
+  position: relative;
 }
 
 .name {
-  background-color: rgb(217, 255, 0);
+  background-color: #034a66;
+  color: #eee;
   padding: 50px;
   font-size: 2rem;
   margin-bottom: 0;
@@ -25,18 +29,24 @@ ul {
   list-style: none;
   padding: 0;
   background-color: #eee;
-  margin-top: 0;
-  font-size: 1.1rem;
-  display: none;
+  margin: 0;
+  font-size: 1.2rem;
+  width: 100%;
+  position: absolute;
+  bottom: -100%;
+  transition: .5s;
+  opacity: 0;
+  /* height: 140px; */
 }
 
 ul li {
-  border-bottom: 1px solid #444;
-  padding: 5px;
+  padding: 13px;
 }
 
-.name:hover + ul{
-  display: block;
+
+article:hover ul{
+  bottom: 0;
+  opacity: 1;
 }
 
 /* table {
