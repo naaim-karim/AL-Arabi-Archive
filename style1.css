@@ -54,7 +54,7 @@ article {
 ul {
   list-style: none;
   background-color: #eee;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   width: 100%;
   position: absolute;
   bottom: -100%;
@@ -149,4 +149,23 @@ button.attendance {
 
 div#placeholder {
   margin-bottom: 10px;
+}
+
+
+/* Media Query */
+
+@media (max-width: 600px) {
+  .name {
+    font-size: 5.5vw;
+  }
+
+  ul {
+    font-size: 4vw;
+    flex-direction: column;
+  }
+
+  ul li {
+    display: flex;
+    align-items: center;
+  }
 }
