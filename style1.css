@@ -7,9 +7,39 @@ header:not(:first-child) {
 
 header h1 {
   text-align: center;
+  font-size: 3rem;
 }
 
-table {
+article {
+  text-align: center;
+}
+
+.name {
+  background-color: rgb(217, 255, 0);
+  padding: 50px;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  background-color: #eee;
+  margin-top: 0;
+  font-size: 1.1rem;
+  display: none;
+}
+
+ul li {
+  border-bottom: 1px solid #444;
+  padding: 5px;
+}
+
+.name:hover ~ ul{
+  display: block;
+}
+
+/* table {
   width: 100%;
   border-collapse: collapse;
   counter-increment: students-counter;
@@ -48,7 +78,7 @@ table td:first-child {
 table tbody td:first-child::before {
   content: counter(students-counter) ". ";
   counter-increment: students-counter;
-}
+} */
 
 button.download,
 button.attendance,
