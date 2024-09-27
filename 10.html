@@ -11,10 +11,52 @@
   <body>
     <header>
       <h1>عبدالهادي مراد</h1>
-      <span>آخر تحديث للمعلومات بتاريخ:</span>
-      <div id="placeholder"></div>
+      <div class="last-updated-info">
+        <span>آخر تحديث للمعلومات بتاريخ:</span>
+        <div id="placeholder"></div>
+      </div>
     </header>
-    <table>
+    <main>
+      <article>
+        <h2 class="name">أحمد شيخ خليل</h2>
+        <ul class="informations">
+          <li>مبتدئ</li>
+          <li>أ. عزالدين العاني</li>
+          <li>السبت 12:30</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">طلال طعاني</h2>
+        <ul class="informations">
+          <li>مبتدئ</li>
+          <li>أ. عزالدين العاني</li>
+          <li>السبت 12:30</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">هاشم مؤذن</h2>
+        <ul class="informations">
+          <li>مبتدئ</li>
+          <li>أ. عزالدين العاني</li>
+          <li>السبت 12:30</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">ضياء شموط</h2>
+        <ul class="informations">
+          <li>متوسط</li>
+          <li>أ. عبدالله الحمصي</li>
+          <li>أيام الأربعاء والسبت الساعة 19:00</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">وائل السكري</h2>
+        <ul class="informations">
+          <li>لم يختبر</li>
+        </ul>
+      </article>
+    </main>
+    <!-- <table>
       <thead>
         <tr>
           <td>الطالب</td>
@@ -28,19 +70,19 @@
           <td>أحمد شيخ خليل</td>
           <td>مبتدئ</td>
           <td>أ. محمد الرفاعي</td>
-          <td>حضوري</td>
+          <td>السبت 12:30</td>
         </tr>
         <tr>
           <td>طلال طعاني</td>
           <td>مبتدئ</td>
           <td>أ. محمد الرفاعي</td>
-          <td>حضوري</td>
+          <td>السبت 12:30</td>
         </tr>
         <tr>
           <td>هاشم مؤذن</td>
           <td>مبتدئ</td>
           <td>أ. محمد الرفاعي</td>
-          <td>حضوري</td>
+          <td>السبت 12:30</td>
         </tr>
         <tr>
           <td>ضياء شموط</td>
@@ -55,24 +97,24 @@
           <td></td>
         </tr>
       </tbody>
-    </table>
+    </table> -->
     <div class="buttons">
       <a href="Attendance/10.html"
         ><button class="attendance">التفقد</button></a
       >
-      <button id="download_pdf" class="download">اضغط للتنزيل</button>
+      <!-- <button id="download_pdf" class="download">اضغط للتنزيل</button> -->
       <!-- <a href="Homeworks/homework10.html"
         ><button class="homeworks">الواجبات</button></a
       > -->
     </div>
-    <script>
+    <!-- <script>
       document
         .getElementById("download_pdf")
         .addEventListener("click", function () {
           var table2excel = new Table2Excel();
           table2excel.export(document.querySelectorAll("table"));
         });
-    </script>
+    </script> -->
     <script>
       document.getElementById("placeholder").innerHTML = new Date(
         document.lastModified

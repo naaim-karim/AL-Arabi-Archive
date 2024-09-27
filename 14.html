@@ -11,10 +11,82 @@
   <body>
     <header>
       <h1>عبدالله الدمشقي</h1>
-      <span>آخر تحديث للمعلومات بتاريخ:</span>
-      <div id="placeholder"></div>
+      <div class="last-updated-info">
+        <span>آخر تحديث للمعلومات بتاريخ:</span>
+        <div id="placeholder"></div>
+      </div>
     </header>
-    <table>
+    <main>
+      <article>
+        <h2 class="name">محمد الغسان شمندور</h2>
+        <ul class="informations">
+          <li>مبتدئ</li>
+          <li>أ. سارية تبارة</li>
+          <li>السبت 12:30</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">يحيى عتيقي</h2>
+        <ul class="informations">
+          <li>ERROR: Unknown</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">عمرو كريم</h2>
+        <ul class="informations">
+          <li>ERROR: Unknown</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">عبيدة الطبال</h2>
+        <ul class="informations">
+          <li>ERROR: Unknown</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">ميسرة الطبال</h2>
+        <ul class="informations">
+          <li>ERROR: Unknown</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">البراء عكيلة</h2>
+        <ul class="informations">
+          <li>ERROR: Unknown</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">المعتصم بالله المصري</h2>
+        <ul class="informations">
+          <li>ERROR: Unknown</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">أيدمير اسطاس</h2>
+        <ul class="informations">
+          <li>ERROR: Unknown</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">حسان أبو شعر</h2>
+        <ul class="informations">
+          <li>ERROR: Unknown</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">أنس عكيلة</h2>
+        <ul class="informations">
+          <li>ERROR: Unknown</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">أحمد ملبنجي</h2>
+        <ul class="informations">
+          <li>ERROR: Unknown</li>
+        </ul>
+      </article>
+    </main>
+    <!-- <table>
       <thead>
         <tr>
           <td>الطالب</td>
@@ -28,13 +100,13 @@
           <td>محمد الغسان شمندور</td>
           <td>مبتدئ</td>
           <td>أ. عبدالله العبدالله</td>
-          <td>حضوري</td>
+          <td>السبت 12:30</td>
         </tr>
         <tr>
           <td>تيم شبقجي</td>
           <td>مبتدئ</td>
           <td>أ. عبدالله العبدالله</td>
-          <td>حضوري</td>
+          <td>السبت 12:30</td>
         </tr>
         <tr>
           <td>يحيى عتيقي</td>
@@ -97,24 +169,24 @@
           <td></td>
         </tr>
       </tbody>
-    </table>
+    </table> -->
     <div class="buttons">
       <a href="Attendance/14.html"
         ><button class="attendance">التفقد</button></a
       >
-      <button id="download_pdf" class="download">اضغط للتنزيل</button>
+      <!-- <button id="download_pdf" class="download">اضغط للتنزيل</button> -->
       <!-- <a href="Homeworks/homework14.html"
         ><button class="homeworks">الواجبات</button></a
       > -->
     </div>
-    <script>
+    <!-- <script>
       document
         .getElementById("download_pdf")
         .addEventListener("click", function () {
           var table2excel = new Table2Excel();
           table2excel.export(document.querySelectorAll("table"));
         });
-    </script>
+    </script> -->
     <script>
       document.getElementById("placeholder").innerHTML = new Date(
         document.lastModified

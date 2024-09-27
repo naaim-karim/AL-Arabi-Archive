@@ -11,10 +11,100 @@
   <body>
     <header>
       <h1>عبدالله الحمصي</h1>
-      <span>آخر تحديث للمعلومات بتاريخ:</span>
-      <div id="placeholder"></div>
+      <div class="last-updated-info">
+        <span>آخر تحديث للمعلومات بتاريخ:</span>
+        <div id="placeholder"></div>
+      </div>
     </header>
-    <table>
+    <main>
+      <article>
+        <h2 class="name">يزن عطايا</h2>
+        <ul class="informations">
+          <li>متوسط</li>
+          <li>أ. محمد علي الناصر</li>
+          <li>اونلاين</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">عامر طبيخ</h2>
+        <ul class="informations">
+          <li>متوسط</li>
+          <li>أ. محمد علي الناصر</li>
+          <li>اونلاين</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">مؤمن شالاتي</h2>
+        <ul class="informations">
+          <li>متوسط</li>
+          <li>أ. محمد علي الناصر</li>
+          <li>اونلاين</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">محمد قطان</h2>
+        <ul class="informations">
+          <li>متقدم 1</li>
+          <li>أ. حمزة الرفاعي</li>
+          <li>السبت 12:30</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">سامي الحاج علي</h2>
+        <ul class="informations">
+          <li>متقدم 2</li>
+          <li>أ. حمزة الرفاعي</li>
+          <li>السبت 12:30</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">أحمد نجار</h2>
+        <ul class="informations">
+          <li>متقدم 1</li>
+          <li>أ. حمزة الرفاعي</li>
+          <li>السبت 12:30</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">زياد كحالة</h2>
+        <ul class="informations">
+          <li>متقدم 1</li>
+          <li>أ. حمزة الرفاعي</li>
+          <li>السبت 12:30</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">حسام نجار</h2>
+        <ul class="informations">
+          <li>لم يختبر</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">قيس علي</h2>
+        <ul class="informations">
+          <li>لم يختبر</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">لؤي المصري</h2>
+        <ul class="informations">
+          <li>لم يختبر</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">عبدالرحمن قلب اللوز</h2>
+        <ul class="informations">
+          <li>لم يختبر</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">محمد اسكافي</h2>
+        <ul class="informations">
+          <li>لم يختبر</li>
+        </ul>
+      </article>
+    </main>
+    <!-- <table>
       <thead>
         <tr>
           <td>الطالب</td>
@@ -46,25 +136,25 @@
           <td>محمد قطان</td>
           <td>متقدم</td>
           <td>أ. محمد الحمصي</td>
-          <td>حضوري</td>
+          <td>السبت 12:30</td>
         </tr>
         <tr>
           <td>سامي الحاج علي</td>
           <td>متقدم</td>
           <td>أ. محمد الحمصي</td>
-          <td>حضوري</td>
+          <td>السبت 12:30</td>
         </tr>
         <tr>
           <td>أحمد نجار</td>
           <td>متقدم</td>
           <td>أ. محمد الحمصي</td>
-          <td>حضوري</td>
+          <td>السبت 12:30</td>
         </tr>
         <tr>
           <td>زياد كحالة</td>
           <td>متقدم</td>
           <td>أ. محمد الحمصي</td>
-          <td>حضوري</td>
+          <td>السبت 12:30</td>
         </tr>
         <tr>
           <td>حسام النجار</td>
@@ -97,22 +187,22 @@
           <td></td>
         </tr>
       </tbody>
-    </table>
+    </table> -->
     <div class="buttons">
       <a href="Attendance/2.html"><button class="attendance">التفقد</button></a>
-      <button id="download_pdf" class="download">اضغط للتنزيل</button>
+      <!-- <button id="download_pdf" class="download">اضغط للتنزيل</button> -->
       <!-- <a href="Homeworks/homework2.html"
         ><button class="homeworks">الواجبات</button></a
       > -->
     </div>
-    <script>
+    <!-- <script>
       document
         .getElementById("download_pdf")
         .addEventListener("click", function () {
           var table2excel = new Table2Excel();
           table2excel.export(document.querySelectorAll("table"));
         });
-    </script>
+    </script> -->
     <script>
       document.getElementById("placeholder").innerHTML = new Date(
         document.lastModified

@@ -11,10 +11,84 @@
   <body>
     <header>
       <h1>حمزة الحلاق</h1>
-      <span>آخر تحديث للمعلومات بتاريخ:</span>
-      <div id="placeholder"></div>
+      <div class="last-updated-info">
+        <span>آخر تحديث للمعلومات بتاريخ:</span>
+        <div id="placeholder"></div>
+      </div>
     </header>
-    <table>
+    <main>
+      <article>
+        <h2 class="name">آردم الكردي</h2>
+        <ul class="informations">
+          <li>مبتدئ</li>
+          <li>أ. سارية تبارة</li>
+          <li>السبت 12:30</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">يوسف منقار</h2>
+        <ul class="informations">
+          <li>مبتدئ</li>
+          <li>أ. سارية تبارة</li>
+          <li>السبت 12:30</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">آدم كحالة</h2>
+        <ul class="informations">
+          <li>مبتدئ</li>
+          <li>أ. سارية تبارة</li>
+          <li>السبت 12:30</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">عمر اوزتركمان</h2>
+        <ul class="informations">
+          <li>مبتدئ</li>
+          <li>أ. عزالدين العاني</li>
+          <li>السبت 12:30</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">تيم شمندور</h2>
+        <ul class="informations">
+          <li>مبتدئ</li>
+          <li>أ. عزالدين العاني</li>
+          <li>السبت 12:30</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">محمد سعيد البدوي</h2>
+        <ul class="informations">
+          <li>متوسط</li>
+          <li>أ. عبدالله الحمصي</li>
+          <li>أيام الأربعاء والسبت الساعة 19:00</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">عمار الأجوه</h2>
+        <ul class="informations">
+          <li>متوسط</li>
+          <li>أ. عبدالله الحمصي</li>
+          <li>أيام الأربعاء والسبت الساعة 19:00</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">ملاذ المصري</h2>
+        <ul class="informations">
+          <li>متقدم 1</li>
+          <li>أ. حمزة الرفاعي</li>
+          <li>السبت 12:30</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="name">عمر المرعي</h2>
+        <ul class="informations">
+          <li>لم يختبر دوام صيفي فقط</li>
+        </ul>
+      </article>
+    </main>
+    <!-- <table>
       <thead>
         <tr>
           <td>الطالب</td>
@@ -28,31 +102,31 @@
           <td>آردم الكردي</td>
           <td>مبتدئ</td>
           <td>أ. عبدالرحمن زغلول</td>
-          <td>حضوري</td>
+          <td>السبت 12:30</td>
         </tr>
         <tr>
           <td>آدم كحالة</td>
           <td>مبتدئ</td>
           <td>أ. عبدالرحمن زغلول</td>
-          <td>حضوري</td>
+          <td>السبت 12:30</td>
         </tr>
         <tr>
           <td>يوسف المنقار</td>
           <td>مبتدئ</td>
           <td>أ. عبدالرحمن زغلول</td>
-          <td>حضوري</td>
+          <td>السبت 12:30</td>
         </tr>
         <tr>
           <td>عمر اوزتركمان</td>
           <td>مبتدئ</td>
           <td>أ. محمد الرفاعي</td>
-          <td>حضوري</td>
+          <td>السبت 12:30</td>
         </tr>
         <tr>
           <td>تيم شمندور</td>
           <td>مبتدئ</td>
           <td>أ. محمد الرفاعي</td>
-          <td>حضوري</td>
+          <td>السبت 12:30</td>
         </tr>
         <tr>
           <td>محمد سعيد البدوي</td>
@@ -70,7 +144,7 @@
           <td>ملاذ المصري</td>
           <td>متقدم</td>
           <td>أ. عبدالوهاب المقري</td>
-          <td>حضوري</td>
+          <td>السبت 12:30</td>
         </tr>
         <tr>
           <td>عمر المرعي</td>
@@ -78,23 +152,23 @@
           <td></td>
           <td></td>
         </tr>
-      </tbody>
+      </tbody> -->
     </table>
     <div class="buttons">
       <a href="Attendance/8.html"><button class="attendance">التفقد</button></a>
-      <button id="download_pdf" class="download">اضغط للتنزيل</button>
+      <!-- <button id="download_pdf" class="download">اضغط للتنزيل</button> -->
       <!-- <a href="Homeworks/homework8.html"
         ><button class="homeworks">الواجبات</button></a
       > -->
     </div>
-    <script>
+    <!-- <script>
       document
         .getElementById("download_pdf")
         .addEventListener("click", function () {
           var table2excel = new Table2Excel();
           table2excel.export(document.querySelectorAll("table"));
         });
-    </script>
+    </script> -->
     <script>
       document.getElementById("placeholder").innerHTML = new Date(
         document.lastModified
