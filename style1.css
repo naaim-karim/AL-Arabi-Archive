@@ -10,10 +10,6 @@ html {
 
 body {
   padding: 10px;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
 }
 
 header {
@@ -33,7 +29,6 @@ header .last-updated-info {
 
 main {
   counter-reset: students-counter 0;
-  overflow-y: scroll;
 }
 
 h2::before {
